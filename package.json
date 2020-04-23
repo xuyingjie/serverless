@@ -1,0 +1,29 @@
+{
+  "name": "serverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@alicloud/fc2": "^2.2.0",
+    "@alicloud/pop-core": "^1.7.9",
+    "ali-oss": "^6.7.0",
+    "axios": "^0.19.2",
+    "compressing": "^1.5.0",
+    "cron-parser": "^2.13.0",
+    "form-data": "^3.0.0",
+    "lodash": "^4.17.15",
+    "raw-body": "^2.4.1",
+    "tablestore": "^4.3.2",
+    "xlsx": "^0.15.6"
+  },
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "build": "node_modules/.bin/webpack --define",
+    "upload": "node ./upload-lambda.js --define"
+  },
+  "author": "xuyingjie@outlook.com",
+  "license": "MIT"
+}
